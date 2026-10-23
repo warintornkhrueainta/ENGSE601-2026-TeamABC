@@ -1,0 +1,47 @@
+# วันที่รัน: 2026-10-20 22:30:30 +07
+# ระบบที่ทดสอบ: Case X Mini v0.9 (backend 0.9.0)
+# Node.js v22.22.0 · Jest 29.7.0 · เครื่อง: Linux x86_64
+# โฟลเดอร์ที่รัน: /home/claude/run/casex-mini-v0.9/backend
+# คำสั่ง: npx jest --runInBand tests/unit/requestService.test.js
+
+FAIL tests/unit/requestService.test.js
+  R-A ขอล่วงหน้าได้ 3 ถึง 30 วัน (กฎสมมติ)
+    ✓ TC-01 ขอล่วงหน้า 2 วัน ควรผ่าน=false (เลยขอบล่าง) (21 ms)
+    ✕ TC-02 ขอล่วงหน้า 3 วัน ควรผ่าน=true (ขอบล่าง) (2 ms)
+    ✓ TC-03 ขอล่วงหน้า 15 วัน ควรผ่าน=true (ตัวแทนกลุ่มที่ถูกต้อง)
+    ✓ TC-04 ขอล่วงหน้า 30 วัน ควรผ่าน=true (ขอบบน) (1 ms)
+    ✓ TC-05 ขอล่วงหน้า 31 วัน ควรผ่าน=false (เลยขอบบน)
+  R-B หนึ่งคำขอมีทรัพยากรได้ 1 ถึง 10 รายการ (กฎสมมติ)
+    ✓ TC-06 มีทรัพยากร 0 รายการ ควรผ่าน=false (1 ms)
+    ✓ TC-07 มีทรัพยากร 1 รายการ ควรผ่าน=true
+    ✓ TC-08 มีทรัพยากร 10 รายการ ควรผ่าน=true (1 ms)
+    ✓ TC-09 มีทรัพยากร 11 รายการ ควรผ่าน=false (1 ms)
+  FR-X-04 อุปกรณ์ต้องมีผู้รับผิดชอบ (ตารางตัดสินใจ)
+    ✓ TC-10 มีอุปกรณ์ และระบุผู้รับผิดชอบ -> ผ่าน (1 ms)
+    ✓ TC-11 มีอุปกรณ์ แต่ไม่ระบุผู้รับผิดชอบ -> ไม่ผ่าน และบอกว่าขาดอะไร
+    ✓ TC-12 ไม่มีอุปกรณ์เลย -> ผ่าน
+
+  ● R-A ขอล่วงหน้าได้ 3 ถึง 30 วัน (กฎสมมติ) › TC-02 ขอล่วงหน้า 3 วัน ควรผ่าน=true (ขอบล่าง)
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      20 |     const result = validateRequest(input, resources);
+      21 |     // Assert
+    > 22 |     expect(result.ok).toBe(expected);
+         |                       ^
+      23 |   });
+      24 | });
+      25 |
+
+      at toBe (tests/unit/requestService.test.js:22:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 11 passed, 12 total
+Snapshots:   0 total
+Time:        0.7 s
+Ran all test suites matching /tests\/unit\/requestService.test.js/i.
+
+# exit code: 1 (0 = ผ่านทุกข้อ · 1 = มีข้อที่ไม่ผ่าน)

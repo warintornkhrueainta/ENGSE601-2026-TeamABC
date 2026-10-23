@@ -1,0 +1,42 @@
+# วันที่รัน: 2026-10-20 22:30:32 +07
+# ระบบที่ทดสอบ: Case X Mini v0.9 (backend 0.9.0 · Supertest)
+# Node.js v22.22.0 · Jest 29.7.0 · เครื่อง: Linux x86_64
+# โฟลเดอร์ที่รัน: /home/claude/run/casex-mini-v0.9/backend
+# คำสั่ง: npx jest --runInBand tests/api/requests.api.test.js -t UC-X-01
+
+FAIL tests/api/requests.api.test.js
+  UC-X-01 ส่งคำขอ ผ่าน API
+    ✕ TC-02 ระดับ API: ขอล่วงหน้า 3 วัน -> 201 และบันทึกลงไฟล์ (45 ms)
+    ✓ TC-01 ระดับ API: ขอล่วงหน้า 2 วัน -> 400 และไม่บันทึก (8 ms)
+    ✓ TC-11 ระดับ API: อุปกรณ์ไม่มีผู้รับผิดชอบ -> 400 (9 ms)
+    ✓ TC-23 ไม่ได้เข้าสู่ระบบ -> 401 (7 ms)
+  UC-X-02 พิจารณารายการ ผ่าน API
+    ○ skipped TC-21 เจ้าของห้องอนุมัติ -> สถานะรวมเป็น READY และมีบันทึกผู้กระทำ
+    ○ skipped TC-18 ระดับ API: เรียกตรงด้วยบัญชีเจ้าของอุปกรณ์ -> 403 และบันทึกเหตุการณ์
+  FR-X-06 แจ้งเตือนผู้จัด
+    ○ skipped TC-22 ส่งคำขอแล้วผู้จัดได้รับอีเมลแจ้ง
+
+  ● UC-X-01 ส่งคำขอ ผ่าน API › TC-02 ระดับ API: ขอล่วงหน้า 3 วัน -> 201 และบันทึกลงไฟล์
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 400
+
+      12 |   test('TC-02 ระดับ API: ขอล่วงหน้า 3 วัน -> 201 และบันทึกลงไฟล์', async () => {
+      13 |     const res = await post(USERS.organizer, body({ daysAhead: 3 }));
+    > 14 |     expect(res.status).toBe(201);
+         |                        ^
+      15 |     expect(res.body.status).toBe('AWAITING_DECISIONS');
+      16 |     expect(store.read('requests')).toHaveLength(1);
+      17 |   });
+
+      at Object.toBe (tests/api/requests.api.test.js:14:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 skipped, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.122 s
+Ran all test suites matching /tests\/api\/requests.api.test.js/i with tests matching "UC-X-01".
+
+# exit code: 1 (0 = ผ่านทุกข้อ · 1 = มีข้อที่ไม่ผ่าน)

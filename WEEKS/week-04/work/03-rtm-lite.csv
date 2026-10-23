@@ -1,0 +1,6 @@
+Requirement_ID,Requirement_Source_Version,Linked_Risk_or_Stakeholder,Acceptance_Basis,Planned_Test_Level,Planned_Evidence,Evidence_Status,Owner,Open_Issue_or_Next_Action
+FR-X-01,CaseX SRS v1.1 บทที่ 3,Organizer กรอกข้อมูลกิจกรรมครั้งเดียว,AC-X-01,Integration,ข้อมูลที่บันทึกมีคำขอเดียวและทุกรายการอ้างคำขอเดียวกัน,Planned,สมาชิก ก,ไม่มี
+FR-X-02,CaseX SRS v1.1 บทที่ 3 · NFR-X-02,ข้อมูลความพร้อมเก่าแต่ดูเหมือนยืนยันแล้ว,AC-X-03 · UC-X-01 A1,System,ภาพหน้าจอที่แสดงแหล่งที่มาและเวลาที่ตรวจล่าสุด,Not Ready,สมาชิก ข,รอ TBD-X-06 เกณฑ์ความสด (RV-03)
+FR-X-03,CaseX SRS v1.1 บทที่ 3 · UC-X-01 E2,ส่งผิดเจ้าของ หรือหาเจ้าของไม่พบแต่บอกว่าสำเร็จ,AC-X-02 · UC-X-01 E2,Integration · System,ผลการเรียก API และข้อมูลรายการที่ส่งถึงเจ้าของแต่ละคน,Not Ready,สมาชิก ก,รอ TBD-X-04 (RV-02)
+FR-X-04,CaseX SRS v1.1 บทที่ 3 · UC-X-01 E1,เจ้าของได้รับคำขอที่ไม่มีคนดูแลอุปกรณ์,AC-X-02 · UC-X-01 E1,Component · Integration,ผล Unit ของการตรวจก่อนส่ง และผลการเรียก API ตรง,Planned,สมาชิก ค,ยืนยันรายการข้อมูลขั้นต่ำ (RV-04)
+CON-X-01,CaseX SRS v1.1 บทที่ 5,ตรวจไม่ได้ว่าใครส่งคำขอ,CON-X-01,Integration,ผลการเรียก API โดยไม่ยืนยันตัวตน,Planned,สมาชิก ค,ไม่มี
