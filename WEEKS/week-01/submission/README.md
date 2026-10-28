@@ -2,7 +2,7 @@
 
 วางไฟล์ส่งจริงที่นี่ด้วยชื่อ
 
-`W01_<TeamName>_Quality-Risk-Cards_v1.pdf`
+`W01_ABC_Quality_Risk_Cards_completed.pdf`
 
 ก่อนส่งให้ตรวจว่า PDF เปิดได้ อ่านได้ มี 3–5 cards, source/version, สมาชิก/ผู้ทบทวน, evidence status และ AI declaration เมื่อใช้ AI จากนั้น merge เข้า `main`, tag `w01-submission-v1` และอัปเดต `STATUS.md`
 
