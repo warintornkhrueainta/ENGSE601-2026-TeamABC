@@ -17,10 +17,10 @@
 | รายการ | กรอก |
 |---|---|
 | ชื่อทีม (`<TeamName>` ภาษาอังกฤษ ไม่มีช่องว่าง ใช้ชื่อเดียวกันทุกไฟล์) | [เช่น SmartQueue] |
-| โครงงาน ENGSE212 | [ชื่อโครงงาน] |
+| โครงงาน ENGSE212 | [Development of an Amulet Authentication System Using Deep Learning and Image Processing] |
 | feature ที่ใช้ทดสอบ (เลือกในใบงานครั้งที่ 1) | [กรอก] |
-| ผู้ส่งหลัก | [ชื่อ–สกุล] |
-| ลิงก์ repo นี้ | [https://github.com/...] |
+| ผู้ส่งหลัก | [วรินทร เครืออินตา] |
+| ลิงก์ repo นี้ | [https://github.com/warintornkhrueainta/ENGSE601-2026-TeamABC] |
 
 ## งานที่ต้องส่ง
 
