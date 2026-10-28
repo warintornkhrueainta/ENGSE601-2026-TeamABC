@@ -16,9 +16,9 @@
 
 | รายการ | กรอก |
 |---|---|
-| ชื่อทีม (`<TeamName>` ภาษาอังกฤษ ไม่มีช่องว่าง ใช้ชื่อเดียวกันทุกไฟล์) | [เช่น SmartQueue] |
+| ชื่อทีม (`<TeamName>` ภาษาอังกฤษ ไม่มีช่องว่าง ใช้ชื่อเดียวกันทุกไฟล์) | [ABC] |
 | โครงงาน ENGSE212 | [Development of an Amulet Authentication System Using Deep Learning and Image Processing] |
-| feature ที่ใช้ทดสอบ (เลือกในใบงานครั้งที่ 1) | [กรอก] |
+| feature ที่ใช้ทดสอบ (เลือกในใบงานครั้งที่ 1) | [python] |
 | ผู้ส่งหลัก | [วรินทร เครืออินตา] |
 | ลิงก์ repo นี้ | [https://github.com/warintornkhrueainta/ENGSE601-2026-TeamABC] |
 
