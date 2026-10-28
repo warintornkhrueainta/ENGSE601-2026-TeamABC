@@ -74,10 +74,10 @@ HANDOFF  → นำผลลัพธ์ไปใช้ต่อในสัป�
 
 | Week | งานที่ต้องทำ | ไฟล์ส่งมาตรฐาน |
 |---|---|---|
-| 01 | สร้าง Quality Risk Cards จำนวน 3–5 รายการ | `W01_<TeamName>_Quality-Risk-Cards_v1.pdf` |
-| 02 | สร้าง Project Quality Route Map สำหรับ Critical Slice | `W02_<TeamName>_Project-Quality-Route-Map_v1.pdf` |
-| 03 | ตรวจ Testability และปรับ Requirements พร้อม Acceptance Criteria | `W03_<TeamName>_Revised-Critical-Requirements_v1.pdf` |
-| 04 | Requirement Review, RTM v1 และ Gate A | `W04_<TeamName>_SRS-Review-and-RTM_v1.pdf` |
+| 01 | สร้าง Quality Risk Cards จำนวน 3–5 รายการ | `W01_ABC_Quality-Risk-Cards_v1.pdf` |
+| 02 | สร้าง Project Quality Route Map สำหรับ Critical Slice | `W02_ABC_Project-Quality-Route-Map_v1.pdf` |
+| 03 | ตรวจ Testability และปรับ Requirements พร้อม Acceptance Criteria | `W03_ABC_Revised-Critical-Requirements_v1.pdf` |
+| 04 | Requirement Review, RTM v1 และ Gate A | `W04_ABC_SRS-Review-and-RTM_v1.pdf` |
 
 รายละเอียดขั้นตอน แบบกรอก และ Definition of Done อยู่ใน README ของแต่ละสัปดาห์
 
